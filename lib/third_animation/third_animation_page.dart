@@ -13,8 +13,7 @@ class ThirdAnimationPage extends StatefulWidget {
   State<ThirdAnimationPage> createState() => _ThirdAnimationPageState();
 }
 
-class _ThirdAnimationPageState extends State<ThirdAnimationPage>
-    with SingleTickerProviderStateMixin {
+class _ThirdAnimationPageState extends State<ThirdAnimationPage> with SingleTickerProviderStateMixin {
   late AnimationController animationController;
   late Animation creditCardToDown;
   late Animation creditCardLeftToRight;
@@ -58,8 +57,7 @@ class _ThirdAnimationPageState extends State<ThirdAnimationPage>
       ),
     );
 
-    overlappingCreditCardLeftToRight =
-        Tween<double>(begin: -250.0, end: 250.0).animate(
+    overlappingCreditCardLeftToRight = Tween<double>(begin: -250.0, end: 250.0).animate(
       CurvedAnimation(
         parent: animationController,
         curve: const Interval(0.125, 0.3, curve: Curves.fastOutSlowIn),
@@ -90,8 +88,7 @@ class _ThirdAnimationPageState extends State<ThirdAnimationPage>
     machineCardPadding = Tween<double>(begin: 0.0, end: 20.0).animate(
       CurvedAnimation(
         parent: animationController,
-        curve:
-            const Interval(0.35, 0.385, curve: Curves.fastLinearToSlowEaseIn),
+        curve: const Interval(0.35, 0.385, curve: Curves.fastLinearToSlowEaseIn),
       ),
     );
 
@@ -112,16 +109,14 @@ class _ThirdAnimationPageState extends State<ThirdAnimationPage>
     iconCheckSize = Tween<double>(begin: 0.0, end: 50.0).animate(
       CurvedAnimation(
         parent: animationController,
-        curve:
-            const Interval(0.25, 0.275, curve: Curves.fastLinearToSlowEaseIn),
+        curve: const Interval(0.25, 0.275, curve: Curves.fastLinearToSlowEaseIn),
       ),
     );
 
     explodeIconsOpacity = Tween<double>(begin: 0.0, end: 1.0).animate(
       CurvedAnimation(
         parent: animationController,
-        curve:
-            const Interval(0.35, 0.355, curve: Curves.fastLinearToSlowEaseIn),
+        curve: const Interval(0.35, 0.355, curve: Curves.fastLinearToSlowEaseIn),
       ),
     );
 
@@ -148,8 +143,7 @@ class _ThirdAnimationPageState extends State<ThirdAnimationPage>
         explodeIconsOpacity = Tween<double>(begin: 1.0, end: 0.0).animate(
           CurvedAnimation(
             parent: animationController,
-            curve:
-                const Interval(0.4, 0.85, curve: Curves.fastLinearToSlowEaseIn),
+            curve: const Interval(0.4, 0.85, curve: Curves.fastLinearToSlowEaseIn),
           ),
         );
       }
@@ -157,16 +151,14 @@ class _ThirdAnimationPageState extends State<ThirdAnimationPage>
         machineCardPadding = Tween<double>(begin: 20.0, end: 5.0).animate(
           CurvedAnimation(
             parent: animationController,
-            curve: const Interval(0.385, 0.415,
-                curve: Curves.fastLinearToSlowEaseIn),
+            curve: const Interval(0.385, 0.415, curve: Curves.fastLinearToSlowEaseIn),
           ),
         );
 
         iconCheckSize = Tween<double>(begin: 80.0, end: 65.0).animate(
           CurvedAnimation(
             parent: animationController,
-            curve: const Interval(0.385, 0.415,
-                curve: Curves.fastLinearToSlowEaseIn),
+            curve: const Interval(0.385, 0.415, curve: Curves.fastLinearToSlowEaseIn),
           ),
         );
       }
@@ -214,9 +206,7 @@ class _ThirdAnimationPageState extends State<ThirdAnimationPage>
                   children: [
                     Opacity(
                       opacity: explodeIconsOpacity.value,
-                      child: StackExplodeIcons(
-                          constraints: constraints,
-                          animationController: animationController),
+                      child: StackExplodeIcons(constraints: constraints, animationController: animationController),
                     ),
                     Positioned(
                       top: creditCardToDown.value,

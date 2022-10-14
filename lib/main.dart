@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'first_animation/first_animation_page.dart';
+import 'package:flutter_and_animations/review_in_app.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +25,7 @@ class MyApp extends StatelessWidget {
             surface: Colors.white,
             onSurface: Colors.white,
           )),
-      home: const FirstAnimationPage(),
+      home: const ReviewPage(),
     );
   }
 }
