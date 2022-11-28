@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_and_animations/third_animation/widget/circle_full_icon_widget.dart';
 import 'package:flutter_and_animations/third_animation/widget/circle_outline_icon_widget.dart';
