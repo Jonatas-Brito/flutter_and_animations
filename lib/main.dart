@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_and_animations/dot_progress_animation/dot_progress_view.dart';
+import 'package:flutter_and_animations/lottie_animation/lottie_animation_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
             surface: Colors.white,
             onSurface: Colors.white,
           )),
-      home: const DotProgressView(),
+      home: const LottieAnimation(),
     );
   }
 }
